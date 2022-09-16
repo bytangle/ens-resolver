@@ -14,6 +14,6 @@ abstract contract ENS {
 abstract contract Resolver {
     /// @dev get resolver address
     /// @param _node node hash
-    /// @return address of resolver
+    /// @return address pointed to by an ENS identifier
     function addr(bytes32 _node) public virtual view returns (address);
 }
